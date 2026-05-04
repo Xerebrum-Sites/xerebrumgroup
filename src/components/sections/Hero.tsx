@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { CtaButton } from "./CtaButton";
+import { CtaButton } from "../CtaButton";
 
 export const Hero = () => (
   <section className="relative overflow-hidden bg-hero">
