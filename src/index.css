@@ -7,68 +7,68 @@
 /* Xerebrum Design System — Midnight Indigo + Emerald accent */
 @layer base {
   :root {
-    /* Surfaces */
-    --background: 230 45% 5%;
-    --foreground: 220 30% 96%;
+    /* Surfaces — Xerebrum dark */
+    --background: 0 0% 6%;
+    --foreground: 0 0% 96%;
 
-    --card: 230 40% 8%;
-    --card-foreground: 220 30% 96%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 230 45% 6%;
-    --popover-foreground: 220 30% 96%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 96%;
 
-    /* Indigo primary */
-    --primary: 244 75% 62%;
-    --primary-foreground: 230 45% 5%;
-    --primary-glow: 248 90% 72%;
+    /* Brand red primary */
+    --primary: 355 86% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 355 84% 58%;
 
-    /* Emerald accent (AI/innovation) */
-    --accent: 158 75% 52%;
-    --accent-foreground: 230 45% 5%;
-    --accent-glow: 158 90% 60%;
+    /* Brand red accent (AI/innovation) — lighter warm red */
+    --accent: 355 84% 58%;
+    --accent-foreground: 0 0% 98%;
+    --accent-glow: 8 90% 65%;
 
-    --secondary: 230 35% 14%;
-    --secondary-foreground: 220 30% 96%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 230 30% 12%;
-    --muted-foreground: 220 15% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 220 30% 96%;
+    --destructive: 355 86% 45%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 230 30% 16%;
-    --input: 230 30% 14%;
-    --ring: 244 75% 62%;
+    --border: 0 0% 18%;
+    --input: 0 0% 14%;
+    --ring: 355 86% 45%;
 
     --radius: 0.875rem;
 
     /* Gradients */
-    --gradient-hero: radial-gradient(ellipse at top, hsl(244 75% 25% / 0.6), transparent 60%), linear-gradient(180deg, hsl(230 45% 5%), hsl(230 50% 8%));
-    --gradient-primary: linear-gradient(135deg, hsl(244 75% 62%), hsl(248 90% 72%));
-    --gradient-accent: linear-gradient(135deg, hsl(158 75% 52%), hsl(170 80% 55%));
-    --gradient-mesh: radial-gradient(at 20% 20%, hsl(244 75% 50% / 0.25) 0px, transparent 50%),
-                     radial-gradient(at 80% 30%, hsl(158 75% 45% / 0.18) 0px, transparent 50%),
-                     radial-gradient(at 50% 90%, hsl(248 90% 55% / 0.20) 0px, transparent 50%);
-    --gradient-text: linear-gradient(135deg, hsl(220 30% 98%), hsl(220 25% 75%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(355 86% 30% / 0.55), transparent 60%), linear-gradient(180deg, hsl(0 0% 5%), hsl(0 0% 9%));
+    --gradient-primary: linear-gradient(135deg, hsl(355 86% 45%), hsl(355 84% 58%));
+    --gradient-accent: linear-gradient(135deg, hsl(355 84% 58%), hsl(8 90% 65%));
+    --gradient-mesh: radial-gradient(at 20% 20%, hsl(355 86% 45% / 0.28) 0px, transparent 50%),
+                     radial-gradient(at 80% 30%, hsl(8 90% 60% / 0.18) 0px, transparent 50%),
+                     radial-gradient(at 50% 90%, hsl(355 84% 55% / 0.20) 0px, transparent 50%);
+    --gradient-text: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 75%));
 
     /* Shadows */
-    --shadow-glow: 0 0 60px hsl(244 75% 62% / 0.35);
-    --shadow-accent-glow: 0 0 60px hsl(158 75% 52% / 0.35);
-    --shadow-elegant: 0 20px 60px -15px hsl(230 60% 2% / 0.6);
-    --shadow-card: 0 1px 0 hsl(230 30% 18%) inset, 0 30px 60px -25px hsl(230 60% 2% / 0.5);
+    --shadow-glow: 0 0 60px hsl(355 86% 45% / 0.4);
+    --shadow-accent-glow: 0 0 60px hsl(8 90% 60% / 0.4);
+    --shadow-elegant: 0 20px 60px -15px hsl(0 0% 0% / 0.7);
+    --shadow-card: 0 1px 0 hsl(0 0% 18%) inset, 0 30px 60px -25px hsl(0 0% 0% / 0.6);
 
     /* Motion */
     --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 
     /* Sidebar (kept for shadcn compatibility) */
-    --sidebar-background: 230 45% 5%;
-    --sidebar-foreground: 220 30% 96%;
-    --sidebar-primary: 244 75% 62%;
-    --sidebar-primary-foreground: 220 30% 96%;
-    --sidebar-accent: 230 35% 14%;
-    --sidebar-accent-foreground: 220 30% 96%;
-    --sidebar-border: 230 30% 16%;
-    --sidebar-ring: 244 75% 62%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 355 86% 45%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 355 86% 45%;
   }
 }
 
