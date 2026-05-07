@@ -1,15 +1,28 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
 import { CtaButton } from "../CtaButton";
+import sectionBg from "@/assets/section-bg-data.jpg";
 
 export const FeaturedCases = () => {
   const featured = caseStudies.slice(0, 3);
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+  const yBg = useTransform(scrollYProgress, [0, 1], ["-10%", "15%"]);
 
   return (
-    <section className="relative py-24 lg:py-32 border-t border-border">
-      <div className="container-x">
+    <section ref={ref} className="relative py-24 lg:py-32 overflow-hidden">
+      {/* Parallax conceptual background — seamlessly blended */}
+      <motion.div
+        style={{ y: yBg, backgroundImage: `url(${sectionBg})` }}
+        className="absolute inset-0 -top-20 bg-cover bg-center opacity-25 will-change-transform"
+        aria-hidden
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background" aria-hidden />
+
+      <div className="container-x relative">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">
             <span className="eyebrow mb-5">Casos de éxito</span>
