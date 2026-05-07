@@ -61,21 +61,15 @@ export const AiSpotlight = () => {
           style={{ y: yImg }}
           className="relative aspect-square max-w-xl mx-auto w-full will-change-transform"
         >
-          <div className="absolute inset-0 rounded-full bg-primary/25 blur-[100px] animate-pulse-glow" aria-hidden />
-          <div className="absolute inset-0 rounded-full bg-accent/15 blur-[80px]" aria-hidden />
+          <div className="absolute inset-0 rounded-full bg-primary/30 blur-[120px] animate-pulse-glow" aria-hidden />
+          <div className="absolute inset-0 rounded-full bg-accent/20 blur-[90px] animate-float-slow" aria-hidden />
           <img
             src={aiOrb}
-            alt="Cerebro digital representando inteligencia artificial Xerebrum"
+            alt="Mano humana conectando con inteligencia — Xerebrum IA"
             loading="lazy"
             width={1024}
             height={1024}
-            className="relative w-full h-full object-cover mix-blend-screen opacity-95"
-            style={{
-              maskImage:
-                "radial-gradient(circle at center, black 40%, transparent 75%)",
-              WebkitMaskImage:
-                "radial-gradient(circle at center, black 40%, transparent 75%)",
-            }}
+            className="relative w-full h-full object-cover mask-fade-radial mix-blend-screen animate-float"
           />
         </motion.div>
       </div>
