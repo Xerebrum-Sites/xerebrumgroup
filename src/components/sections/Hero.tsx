@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useRef } from "react";
 import { CtaButton } from "../CtaButton";
+import { MotionLayer } from "../MotionLayer";
 import heroBg from "@/assets/hero-bg.jpg";
 
 export const Hero = () => {
@@ -24,10 +25,11 @@ export const Hero = () => {
         aria-hidden
       />
       {/* Vignette + mesh layers */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/45 to-background" aria-hidden />
       <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background/80" aria-hidden />
       <div className="absolute inset-0 bg-mesh opacity-50" aria-hidden />
       <div className="absolute inset-0 grid-bg opacity-25" aria-hidden />
+      <MotionLayer variant="mixed" />
 
       {/* Floating ambient orbs (parallax + drift) */}
       <motion.div

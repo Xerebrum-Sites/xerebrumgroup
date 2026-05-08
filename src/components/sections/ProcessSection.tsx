@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import sectionBg from "@/assets/section-bg-data.jpg";
+import { MotionLayer } from "../MotionLayer";
 
 const items = [
   { n: "01", title: "Diagnóstico", desc: "Entendemos tu negocio, equipos y datos. Identificamos las palancas de mayor impacto." },
@@ -23,6 +24,7 @@ export const ProcessSection = () => {
         aria-hidden
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background" aria-hidden />
+      <MotionLayer variant="lines" />
 
       <div className="container-x relative">
         <div className="max-w-2xl mb-14">
