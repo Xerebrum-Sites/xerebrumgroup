@@ -32,7 +32,7 @@ export const caseStudies: CaseStudy[] = [
       "La marca operaba con un sitio lento, inventario desconectado y campañas que no se podían atribuir. Las ventas digitales representaban menos del 6% del total.",
     solution:
       "Construimos una PWA headless conectada al ERP, lanzamos campañas full-funnel con atribución unificada y desplegamos un copiloto de IA para atención al cliente 24/7.",
-    services: ["desarrollo", "marketing-digital", "automatizacion-ia"],
+    services: ["plataformas-digitales", "crecimiento-digital", "automatizacion-ia"],
     image: ecommerce,
     metrics: [
       { label: "Ventas online", value: "+312%" },
@@ -53,7 +53,7 @@ export const caseStudies: CaseStudy[] = [
       "Crecimiento dependiente de referidos, sin canal digital propio y con un onboarding manual que tomaba 11 días.",
     solution:
       "Estrategia de inbound + ABM en LinkedIn, rediseño del sitio con Next.js y un flujo de onboarding automatizado con verificación documental por IA.",
-    services: ["marketing-digital", "consultoria-360", "automatizacion-ia"],
+    services: ["crecimiento-digital", "estrategia-digital", "automatizacion-ia"],
     image: finance,
     metrics: [
       { label: "MQLs/mes", value: "12 → 380" },
@@ -74,7 +74,7 @@ export const caseStudies: CaseStudy[] = [
       "Procesos clave (cotizaciones, seguimiento de pedidos, reclamos) se gestionaban en email y Excel. Tiempos de respuesta de hasta 6 días.",
     solution:
       "Mapeo de procesos, extranet con Laravel + React para clientes y distribuidores, y agentes IA que generan cotizaciones a partir de specs técnicas.",
-    services: ["consultoria-360", "desarrollo", "automatizacion-ia"],
+    services: ["estrategia-digital", "plataformas-digitales", "automatizacion-ia"],
     image: industry,
     metrics: [
       { label: "Horas/mes liberadas", value: "1,800" },
@@ -95,7 +95,7 @@ export const caseStudies: CaseStudy[] = [
       "Múltiples sistemas inconexos, agendamiento telefónico saturado y experiencia móvil deficiente.",
     solution:
       "Diseño UX centrado en pacientes, PWA con agendamiento inteligente, integración con HIS y dashboards de adopción para directores médicos.",
-    services: ["desarrollo", "consultoria-360"],
+    services: ["plataformas-digitales", "estrategia-digital"],
     image: health,
     metrics: [
       { label: "Citas digitales", value: "8% → 71%" },
@@ -116,7 +116,7 @@ export const caseStudies: CaseStudy[] = [
       "Marca posicionada offline pero invisible en buscadores. Leads dispersos sin seguimiento estructurado.",
     solution:
       "Rediseño de marca digital, sitio con tours inmersivos, SEO local agresivo y agente IA que califica y agenda visitas automáticamente.",
-    services: ["marketing-digital", "desarrollo", "automatizacion-ia"],
+    services: ["crecimiento-digital", "plataformas-digitales", "automatizacion-ia"],
     image: realestate,
     metrics: [
       { label: "Leads calificados", value: "+304%" },

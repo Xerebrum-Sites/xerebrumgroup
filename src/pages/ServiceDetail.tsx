@@ -59,6 +59,32 @@ const ServiceDetail = () => {
       <section className="py-20 border-t border-border">
         <div className="container-x grid lg:grid-cols-3 gap-12">
           <div>
+            <span className="eyebrow mb-4">Subservicios</span>
+            <h2 className="font-display text-3xl font-semibold tracking-tight">Lo que cubre este pilar</h2>
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+              Cada subservicio puede contratarse de forma independiente o como parte de una propuesta integral.
+            </p>
+          </div>
+          <div className="lg:col-span-2 flex flex-wrap gap-2.5">
+            {service.subservices.map((sub) => (
+              <span
+                key={sub}
+                className={`text-sm px-4 py-2 rounded-full border transition-smooth ${
+                  service.highlight
+                    ? "border-accent/40 bg-accent/10 text-accent"
+                    : "border-border bg-secondary/60 text-foreground/90 hover:border-primary/40"
+                }`}
+              >
+                {sub}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 border-t border-border">
+        <div className="container-x grid lg:grid-cols-3 gap-12">
+          <div>
             <span className="eyebrow mb-4">Capacidades</span>
             <h2 className="font-display text-3xl font-semibold tracking-tight">Qué incluye</h2>
           </div>

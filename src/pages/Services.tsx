@@ -15,12 +15,12 @@ const ServicesPage = () => (
       <div className="absolute inset-0 bg-mesh opacity-70" aria-hidden />
       <div className="container-x relative max-w-3xl">
         <span className="eyebrow mb-5">Servicios</span>
-        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient">
-          Cuatro disciplinas, un solo equipo.
+        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient pb-2">
+          Cuatro pilares, un solo equipo.
         </h1>
         <p className="mt-6 text-lg text-muted-foreground">
-          Operamos como un grupo único con áreas especializadas. Cada servicio puede contratarse
-          de forma independiente o como parte de una transformación integral.
+          Crecimiento, plataformas, automatización con IA y estrategia. Pilares complementarios
+          que pueden contratarse de forma independiente o como una transformación integral.
         </p>
       </div>
     </section>
@@ -48,11 +48,20 @@ const ServicesPage = () => (
               <h2 className="font-display text-2xl font-semibold mb-3">{s.name}</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">{s.long}</p>
               <div className="flex flex-wrap gap-2">
-                {s.capabilities.slice(0, 3).map((c) => (
-                  <span key={c} className="text-xs px-3 py-1.5 rounded-full bg-secondary text-muted-foreground">
-                    {c}
+                {s.subservices.slice(0, 6).map((sub) => (
+                  <span key={sub} className={`text-xs px-3 py-1.5 rounded-full border ${
+                    s.highlight
+                      ? "border-accent/30 bg-accent/5 text-accent/90"
+                      : "border-border bg-secondary/60 text-muted-foreground"
+                  }`}>
+                    {sub}
                   </span>
                 ))}
+                {s.subservices.length > 6 && (
+                  <span className="text-xs px-3 py-1.5 rounded-full text-muted-foreground">
+                    +{s.subservices.length - 6} más
+                  </span>
+                )}
               </div>
             </Link>
           );

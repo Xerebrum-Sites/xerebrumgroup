@@ -10,7 +10,7 @@ const points = [
   "Pilotos en producción en 4–8 semanas",
   "Integración con tu stack existente (CRM, ERP, datos propios)",
   "Guardarraíles de seguridad, evaluaciones y trazabilidad",
-  "Modelos seleccionados según costo, latencia y precisión",
+  "Equipos liberados de tareas repetitivas para enfocarse en estrategia",
 ];
 
 export const AiSpotlight = () => {
@@ -31,14 +31,14 @@ export const AiSpotlight = () => {
             <Sparkles className="h-3.5 w-3.5 text-accent" />
             Servicio destacado · Nuevo
           </div>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight">
-            <span className="text-gradient">Liberá a tu equipo de</span>{" "}
-            <span className="text-gradient-accent">tareas repetitivas</span>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1] pb-1">
+            <span className="text-gradient">Colaboración humana</span>{" "}
+            <span className="text-gradient-accent">potenciada por IA</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Automatizamos lo operativo para que tu gente se enfoque en lo que mueve el negocio.
-            Agentes conversacionales, copilotos internos y procesamiento inteligente de documentos,
-            integrados de forma segura sobre tu operación actual.
+            Unimos estrategia humana con eficiencia automatizada. Agentes conversacionales,
+            copilotos internos y flujos inteligentes que liberan a tu equipo de lo operativo
+            para que se enfoquen en lo que mueve el negocio.
           </p>
           <ul className="mt-8 space-y-3">
             {points.map((p) => (
@@ -58,24 +58,23 @@ export const AiSpotlight = () => {
           </div>
         </div>
 
-        {/* Real photo — person freed from repetitive tasks, focused on what matters */}
+        {/* Real photo — human-AI collaboration, fully blended (no frame) */}
         <motion.div
           style={{ y: yImg }}
           className="relative aspect-square max-w-xl mx-auto w-full will-change-transform"
         >
-          <div className="absolute -inset-10 rounded-[2rem] bg-primary/25 blur-[110px] animate-pulse-glow" aria-hidden />
-          <div className="absolute -inset-6 rounded-[2rem] bg-accent/15 blur-[80px] animate-float-slow" aria-hidden />
-          <div className="relative rounded-[2rem] overflow-hidden border border-border/40 shadow-elegant animate-float">
+          <div className="absolute -inset-16 rounded-full bg-primary/25 blur-[140px] animate-pulse-glow" aria-hidden />
+          <div className="absolute -inset-8 rounded-full bg-accent/15 blur-[90px] animate-float-slow" aria-hidden />
+          <div className="relative w-full h-full animate-float">
             <img
               src={aiOrb}
-              alt="Profesional argentina enfocada en trabajo estratégico — Xerebrum IA"
+              alt="Colaboración humano–IA: estrategia humana potenciada por automatización inteligente — Xerebrum"
               loading="lazy"
               width={1280}
               height={1280}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover mask-fade-radial mix-blend-screen"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" aria-hidden />
-            <div className="absolute inset-0 stream-dots-v opacity-20 mix-blend-screen" aria-hidden />
+            <div className="absolute inset-0 stream-dots-v opacity-25 mix-blend-screen mask-fade-radial" aria-hidden />
           </div>
         </motion.div>
       </div>
