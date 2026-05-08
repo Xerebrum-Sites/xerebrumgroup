@@ -58,24 +58,23 @@ export const AiSpotlight = () => {
           </div>
         </div>
 
-        {/* Real photo — person freed from repetitive tasks, focused on what matters */}
+        {/* Real photo — human-AI collaboration, fully blended (no frame) */}
         <motion.div
           style={{ y: yImg }}
           className="relative aspect-square max-w-xl mx-auto w-full will-change-transform"
         >
-          <div className="absolute -inset-10 rounded-[2rem] bg-primary/25 blur-[110px] animate-pulse-glow" aria-hidden />
-          <div className="absolute -inset-6 rounded-[2rem] bg-accent/15 blur-[80px] animate-float-slow" aria-hidden />
-          <div className="relative rounded-[2rem] overflow-hidden border border-border/40 shadow-elegant animate-float">
+          <div className="absolute -inset-16 rounded-full bg-primary/25 blur-[140px] animate-pulse-glow" aria-hidden />
+          <div className="absolute -inset-8 rounded-full bg-accent/15 blur-[90px] animate-float-slow" aria-hidden />
+          <div className="relative w-full h-full animate-float">
             <img
               src={aiOrb}
-              alt="Profesional argentina enfocada en trabajo estratégico — Xerebrum IA"
+              alt="Colaboración humano–IA: estrategia humana potenciada por automatización inteligente — Xerebrum"
               loading="lazy"
               width={1280}
               height={1280}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover mask-fade-radial mix-blend-screen"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" aria-hidden />
-            <div className="absolute inset-0 stream-dots-v opacity-20 mix-blend-screen" aria-hidden />
+            <div className="absolute inset-0 stream-dots-v opacity-25 mix-blend-screen mask-fade-radial" aria-hidden />
           </div>
         </motion.div>
       </div>
