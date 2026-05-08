@@ -15,12 +15,12 @@ const ServicesPage = () => (
       <div className="absolute inset-0 bg-mesh opacity-70" aria-hidden />
       <div className="container-x relative max-w-3xl">
         <span className="eyebrow mb-5">Servicios</span>
-        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient">
-          Cuatro disciplinas, un solo equipo.
+        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient pb-2">
+          Cuatro pilares, un solo equipo.
         </h1>
         <p className="mt-6 text-lg text-muted-foreground">
-          Operamos como un grupo único con áreas especializadas. Cada servicio puede contratarse
-          de forma independiente o como parte de una transformación integral.
+          Crecimiento, plataformas, automatización con IA y estrategia. Pilares complementarios
+          que pueden contratarse de forma independiente o como una transformación integral.
         </p>
       </div>
     </section>
