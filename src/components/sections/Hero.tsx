@@ -21,12 +21,12 @@ export const Hero = () => {
       {/* Parallax human background, masked to fade into black */}
       <motion.div
         style={{ y: yBg, scale: scaleBg, backgroundImage: `url(${heroBg})` }}
-        className="absolute inset-0 -top-24 -bottom-24 bg-cover bg-center will-change-transform mask-fade-edges"
+        className="absolute inset-0 -top-24 -bottom-24 bg-cover bg-right will-change-transform mask-fade-edges"
         aria-hidden
       />
-      {/* Vignette + mesh layers */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/45 to-background" aria-hidden />
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background/80" aria-hidden />
+      {/* Vignette + readability layers (left side darker for headline) */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" aria-hidden />
       <div className="absolute inset-0 bg-mesh opacity-50" aria-hidden />
       <div className="absolute inset-0 grid-bg opacity-25" aria-hidden />
       <MotionLayer variant="mixed" />
