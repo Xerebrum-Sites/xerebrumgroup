@@ -31,14 +31,14 @@ export const AiSpotlight = () => {
             <Sparkles className="h-3.5 w-3.5 text-accent" />
             Servicio destacado · Nuevo
           </div>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight">
-            <span className="text-gradient">Liberá a tu equipo de</span>{" "}
-            <span className="text-gradient-accent">tareas repetitivas</span>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1] pb-1">
+            <span className="text-gradient">Colaboración humana</span>{" "}
+            <span className="text-gradient-accent">potenciada por IA</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Automatizamos lo operativo para que tu gente se enfoque en lo que mueve el negocio.
-            Agentes conversacionales, copilotos internos y procesamiento inteligente de documentos,
-            integrados de forma segura sobre tu operación actual.
+            Unimos estrategia humana con eficiencia automatizada. Agentes conversacionales,
+            copilotos internos y flujos inteligentes que liberan a tu equipo de lo operativo
+            para que se enfoquen en lo que mueve el negocio.
           </p>
           <ul className="mt-8 space-y-3">
             {points.map((p) => (
