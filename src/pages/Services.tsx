@@ -48,11 +48,20 @@ const ServicesPage = () => (
               <h2 className="font-display text-2xl font-semibold mb-3">{s.name}</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">{s.long}</p>
               <div className="flex flex-wrap gap-2">
-                {s.capabilities.slice(0, 3).map((c) => (
-                  <span key={c} className="text-xs px-3 py-1.5 rounded-full bg-secondary text-muted-foreground">
-                    {c}
+                {s.subservices.slice(0, 6).map((sub) => (
+                  <span key={sub} className={`text-xs px-3 py-1.5 rounded-full border ${
+                    s.highlight
+                      ? "border-accent/30 bg-accent/5 text-accent/90"
+                      : "border-border bg-secondary/60 text-muted-foreground"
+                  }`}>
+                    {sub}
                   </span>
                 ))}
+                {s.subservices.length > 6 && (
+                  <span className="text-xs px-3 py-1.5 rounded-full text-muted-foreground">
+                    +{s.subservices.length - 6} más
+                  </span>
+                )}
               </div>
             </Link>
           );
