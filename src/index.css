@@ -140,6 +140,56 @@
   .animate-float { animation: float 8s ease-in-out infinite; }
   .animate-float-slow { animation: float 14s ease-in-out infinite; }
   .animate-drift { animation: drift 20s ease-in-out infinite; }
+
+  /* Streaming dots — horizontal moving dotted texture */
+  .stream-dots {
+    background-image: radial-gradient(circle, hsl(var(--primary) / 0.55) 1.2px, transparent 1.6px);
+    background-size: 22px 22px;
+    animation: stream-x 18s linear infinite;
+  }
+  .stream-dots-slow {
+    background-image: radial-gradient(circle, hsl(var(--accent) / 0.45) 1px, transparent 1.4px);
+    background-size: 34px 34px;
+    animation: stream-x 38s linear infinite reverse;
+  }
+  .stream-dots-v {
+    background-image: radial-gradient(circle, hsl(var(--primary-glow) / 0.45) 1px, transparent 1.4px);
+    background-size: 28px 28px;
+    animation: stream-y 26s linear infinite;
+  }
+
+  /* Sweeping diagonal lines */
+  .stream-lines {
+    background-image: repeating-linear-gradient(
+      115deg,
+      transparent 0,
+      transparent 60px,
+      hsl(var(--primary) / 0.18) 60px,
+      hsl(var(--primary) / 0.18) 61px,
+      transparent 61px,
+      transparent 140px
+    );
+    animation: stream-x 22s linear infinite;
+  }
+  .stream-lines-slow {
+    background-image: repeating-linear-gradient(
+      75deg,
+      transparent 0,
+      transparent 90px,
+      hsl(var(--accent) / 0.14) 90px,
+      hsl(var(--accent) / 0.14) 91px,
+      transparent 91px,
+      transparent 220px
+    );
+    animation: stream-x 48s linear infinite reverse;
+  }
+
+  /* Single light beam traveling across */
+  .light-sweep {
+    background: linear-gradient(110deg, transparent 35%, hsl(var(--primary) / 0.12) 50%, transparent 65%);
+    background-size: 250% 100%;
+    animation: sweep 9s linear infinite;
+  }
 }
 
 @keyframes float {
@@ -150,6 +200,18 @@
   0%, 100% { transform: translate(0, 0) scale(1); }
   33% { transform: translate(30px, -20px) scale(1.05); }
   66% { transform: translate(-20px, 30px) scale(0.97); }
+}
+@keyframes stream-x {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 0; }
+}
+@keyframes stream-y {
+  from { background-position: 0 0; }
+  to { background-position: 0 1000px; }
+}
+@keyframes sweep {
+  from { background-position: 200% 0; }
+  to { background-position: -100% 0; }
 }
 
 /* Branded scrollbar */
