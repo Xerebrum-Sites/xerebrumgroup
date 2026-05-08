@@ -10,7 +10,7 @@ const points = [
   "Pilotos en producción en 4–8 semanas",
   "Integración con tu stack existente (CRM, ERP, datos propios)",
   "Guardarraíles de seguridad, evaluaciones y trazabilidad",
-  "Modelos seleccionados según costo, latencia y precisión",
+  "Equipos liberados de tareas repetitivas para enfocarse en estrategia",
 ];
 
 export const AiSpotlight = () => {
