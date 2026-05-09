@@ -9,14 +9,14 @@ export const ServicesGrid = () => (
     <div className="container-x">
       <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
         <div className="max-w-2xl">
-          <span className="eyebrow mb-5">Nuestros pilares</span>
+          <span className="eyebrow mb-5">Lo que hacemos</span>
           <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-gradient pb-1">
-            Cuatro pilares, un solo partner de crecimiento.
+            Cuatro frentes, una forma de trabajar.
           </h2>
         </div>
         <p className="text-muted-foreground max-w-md">
-          Crecimiento, plataformas, automatización y estrategia. Una arquitectura de servicios
-          pensada para acompañar cada etapa de tu evolución digital.
+          Crecimiento, plataformas, automatización y estrategia. Cada uno se puede contratar
+          por separado o combinarse cuando hace falta una mirada completa.
         </p>
       </div>
 

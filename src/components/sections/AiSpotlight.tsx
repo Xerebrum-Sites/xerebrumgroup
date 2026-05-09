@@ -7,10 +7,10 @@ import { CtaButton } from "../CtaButton";
 import { MotionLayer } from "../MotionLayer";
 
 const points = [
-  "Pilotos en producción en 4–8 semanas",
-  "Integración con tu stack existente (CRM, ERP, datos propios)",
-  "Guardarraíles de seguridad, evaluaciones y trazabilidad",
-  "Equipos liberados de tareas repetitivas para enfocarse en estrategia",
+  "Resultados visibles en 4 a 8 semanas",
+  "Se integra con los sistemas que ya usás",
+  "Procesos seguros, ordenados y trazables",
+  "Tu equipo deja de hacer tareas repetitivas",
 ];
 
 export const AiSpotlight = () => {
@@ -29,16 +29,16 @@ export const AiSpotlight = () => {
         <div>
           <div className="eyebrow mb-5">
             <Sparkles className="h-3.5 w-3.5 text-accent" />
-            Servicio destacado · Nuevo
+            Automatización & IA aplicada
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1] pb-1">
-            <span className="text-gradient">Colaboración humana</span>{" "}
-            <span className="text-gradient-accent">potenciada por IA</span>
+            <span className="text-gradient">Menos tareas repetitivas,</span>{" "}
+            <span className="text-gradient-accent">más tiempo para lo importante</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Unimos estrategia humana con eficiencia automatizada. Agentes conversacionales,
-            copilotos internos y flujos inteligentes que liberan a tu equipo de lo operativo
-            para que se enfoquen en lo que mueve el negocio.
+            Identificamos lo que se puede resolver solo y lo automatizamos con criterio.
+            Agentes, integraciones y flujos que ahorran horas, reducen errores y dejan
+            al equipo libre para decidir y crecer.
           </p>
           <ul className="mt-8 space-y-3">
             {points.map((p) => (

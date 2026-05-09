@@ -1,19 +1,19 @@
 const items = [
   {
-    title: "Un grupo, no un marketplace de freelancers",
-    desc: "Equipos internos, multidisciplinarios y con metodología compartida. Cada proyecto tiene un solo responsable de cuenta.",
+    title: "Pensamos antes de proponer",
+    desc: "Antes de tirar ideas, entendemos el negocio, el contexto y las prioridades. Las propuestas llegan con criterio, no con un menú genérico.",
   },
   {
-    title: "Estrategia + ejecución bajo el mismo techo",
-    desc: "No entregamos PowerPoints. Lo que diseñamos, lo construimos y lo operamos hasta que produce resultados.",
+    title: "Hacemos lo que decimos",
+    desc: "No entregamos presentaciones lindas y desaparecemos. Acompañamos la ejecución hasta que las cosas funcionan en el día a día.",
   },
   {
-    title: "IA aplicada con criterio de negocio",
-    desc: "No vendemos hype. Implementamos IA donde mueve la aguja, con guardarraíles de seguridad y métricas claras.",
+    title: "Tecnología con sentido",
+    desc: "Usamos IA y automatización donde realmente aporta. Si una herramienta más simple resuelve mejor el problema, la elegimos.",
   },
   {
-    title: "Transparencia operativa total",
-    desc: "Dashboards en vivo, comités quincenales y acceso a nuestros backlogs. Sabes exactamente en qué estamos.",
+    title: "Conversaciones claras",
+    desc: "Decimos lo que pensamos y explicamos por qué. Reportes simples, decisiones argumentadas y nada de jerga innecesaria.",
   },
 ];
 
@@ -21,13 +21,13 @@ export const DifferentiatorsSection = () => (
   <section className="py-24 lg:py-32 border-t border-border">
     <div className="container-x grid lg:grid-cols-[1fr_1.4fr] gap-12">
       <div>
-        <span className="eyebrow mb-5">Por qué Xerebrum</span>
+        <span className="eyebrow mb-5">Cómo trabajamos</span>
         <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-gradient">
-          Lo que nos hace distintos en la región.
+          Cerca, claros y con criterio.
         </h2>
         <p className="mt-6 text-muted-foreground leading-relaxed">
-          Operamos como un solo equipo. Sin egos entre áreas, sin pelotas que se caen entre el
-          marketing y el desarrollo. La transformación digital sucede cuando todo conversa.
+          Trabajamos como una extensión de tu equipo. Sin intermediarios, sin promesas
+          exageradas y con foco en que las cosas pasen.
         </p>
       </div>
       <div className="grid sm:grid-cols-2 gap-5">

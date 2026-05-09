@@ -60,7 +60,7 @@ export const Hero = () => {
             className="eyebrow mb-6"
           >
             <Sparkles className="h-3.5 w-3.5 text-accent" />
-            Grupo de marketing y transformación digital
+            Estrategia, desarrollo y automatización
           </motion.div>
 
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight">
@@ -70,7 +70,7 @@ export const Hero = () => {
               transition={{ delay: 0.15, duration: 0.7 }}
               className="text-gradient inline-block"
             >
-              Diseñamos el futuro digital
+              Tecnología con criterio
             </motion.span>
             <br />
             <motion.span
@@ -79,7 +79,7 @@ export const Hero = () => {
               transition={{ delay: 0.3, duration: 0.7 }}
               className="inline-block"
             >
-              de empresas que <span className="text-gradient-accent">no se conforman</span>.
+              para resolver <span className="text-gradient-accent">problemas reales</span>.
             </motion.span>
           </h1>
 
@@ -89,8 +89,9 @@ export const Hero = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="mt-7 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
           >
-            Estrategia, desarrollo, consultoría 360 e inteligencia artificial bajo un mismo grupo.
-            Equipos especializados que ejecutan sin fricción para entregar resultados medibles.
+            Acompañamos a empresas a crecer, ordenarse y modernizar sus procesos.
+            Estrategia, plataformas digitales y automatización pensadas desde el negocio,
+            no desde la moda tecnológica.
           </motion.p>
 
           <motion.div
@@ -110,9 +111,9 @@ export const Hero = () => {
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl">
             {[
               { k: "+120", v: "Proyectos entregados" },
-              { k: "12", v: "Países atendidos" },
-              { k: "94%", v: "Retención de clientes" },
-              { k: "6.2x", v: "ROI promedio" },
+              { k: "+10", v: "Años de experiencia" },
+              { k: "94%", v: "Clientes que continúan" },
+              { k: "6.2x", v: "Retorno promedio" },
             ].map((s, i) => (
               <motion.div
                 key={s.v}
