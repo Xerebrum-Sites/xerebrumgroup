@@ -9,18 +9,18 @@ const ServicesPage = () => (
   <SiteLayout>
     <Seo
       title="Servicios · Xerebrum"
-      description="Marketing digital, desarrollo, consultoría 360 y automatización con IA. Áreas especializadas dentro de un mismo grupo."
+      description="Crecimiento digital, plataformas, automatización con IA y estrategia. Cuatro frentes para resolver problemas reales del negocio."
     />
     <section className="relative py-20 lg:py-28 bg-hero overflow-hidden">
       <div className="absolute inset-0 bg-mesh opacity-70" aria-hidden />
       <div className="container-x relative max-w-3xl">
         <span className="eyebrow mb-5">Servicios</span>
         <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient pb-2">
-          Cuatro pilares, un solo equipo.
+          Cuatro frentes, una forma de trabajar.
         </h1>
         <p className="mt-6 text-lg text-muted-foreground">
-          Crecimiento, plataformas, automatización con IA y estrategia. Pilares complementarios
-          que pueden contratarse de forma independiente o como una transformación integral.
+          Crecimiento, plataformas digitales, automatización con IA y estrategia.
+          Cada uno se puede contratar por separado o combinarse cuando el proyecto lo pide.
         </p>
       </div>
     </section>

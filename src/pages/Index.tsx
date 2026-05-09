@@ -7,13 +7,14 @@ import { FeaturedCases } from "@/components/sections/FeaturedCases";
 import { ClientsMarquee } from "@/components/sections/ClientsMarquee";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { DifferentiatorsSection } from "@/components/sections/DifferentiatorsSection";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 
 const Index = () => (
   <SiteLayout>
     <Seo
-      title="Xerebrum · Marketing y Transformación Digital con IA"
-      description="Grupo digital que combina marketing, desarrollo, consultoría 360 y automatización con IA para acelerar el crecimiento de empresas B2B en LATAM."
+      title="Xerebrum · Estrategia, desarrollo y automatización con IA"
+      description="Ayudamos a empresas a crecer, ordenarse y modernizar procesos. Estrategia, plataformas digitales y automatización con criterio de negocio."
     />
     <Hero />
     <ServicesGrid />
@@ -22,6 +23,7 @@ const Index = () => (
     <ClientsMarquee />
     <DifferentiatorsSection />
     <ProcessSection />
+    <Testimonials />
     <CtaBanner />
   </SiteLayout>
 );

@@ -11,11 +11,11 @@ export const CtaBanner = () => (
         <div className="relative grid lg:grid-cols-[1.4fr_1fr] gap-8 items-center">
           <div>
             <h2 className="font-display text-3xl md:text-5xl font-semibold tracking-tight text-gradient max-w-2xl">
-              ¿Listo para acelerar tu próxima etapa de crecimiento?
+              Contanos qué estás resolviendo.
             </h2>
             <p className="mt-5 text-muted-foreground max-w-xl">
-              Conversemos 30 minutos. Te compartimos cómo abordaríamos tu reto y qué resultados
-              esperar en los primeros 90 días.
+              Una conversación de 30 minutos para entender tu situación. Si podemos ayudar,
+              te decimos cómo. Si no, también.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end">
