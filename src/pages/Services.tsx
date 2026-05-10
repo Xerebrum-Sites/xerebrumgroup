@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Seo } from "@/components/Seo";
+import { PageHeader } from "@/components/PageHeader";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { services } from "@/data/services";
+import headerServices from "@/assets/header-services.jpg";
 
 const ServicesPage = () => (
   <SiteLayout>
@@ -11,19 +13,13 @@ const ServicesPage = () => (
       title="Servicios · Xerebrum"
       description="Crecimiento digital, plataformas, automatización con IA y estrategia. Cuatro frentes para resolver problemas reales del negocio."
     />
-    <section className="relative py-20 lg:py-28 bg-hero overflow-hidden">
-      <div className="absolute inset-0 bg-mesh opacity-70" aria-hidden />
-      <div className="container-x relative max-w-3xl">
-        <span className="eyebrow mb-5">Servicios</span>
-        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient pb-2">
-          Cuatro frentes, una forma de trabajar.
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground">
-          Crecimiento, plataformas digitales, automatización con IA y estrategia.
-          Cada uno se puede contratar por separado o combinarse cuando el proyecto lo pide.
-        </p>
-      </div>
-    </section>
+    <PageHeader
+      eyebrow="Servicios"
+      title={<>Cuatro frentes,<br />una forma de trabajar.</>}
+      description="Crecimiento, plataformas digitales, automatización con IA y estrategia. Cada uno se puede contratar por separado o combinarse cuando el proyecto lo pide."
+      image={headerServices}
+      imageAlt="Equipo argentino colaborando con dashboards y diagramas de flujo"
+    />
 
     <section className="py-20 lg:py-28">
       <div className="container-x grid gap-6 md:grid-cols-2">

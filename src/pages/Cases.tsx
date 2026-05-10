@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Seo } from "@/components/Seo";
+import { PageHeader } from "@/components/PageHeader";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { caseStudies } from "@/data/caseStudies";
 import { ArrowUpRight } from "lucide-react";
+import headerCases from "@/assets/header-cases.jpg";
 
 const Cases = () => (
   <SiteLayout>
@@ -11,19 +13,13 @@ const Cases = () => (
       title="Casos de éxito · Xerebrum"
       description="Transformaciones reales con resultados medibles. Conoce cómo empresas en LATAM aceleraron su crecimiento con Xerebrum."
     />
-    <section className="relative py-20 lg:py-28 bg-hero overflow-hidden">
-      <div className="absolute inset-0 bg-mesh opacity-70" aria-hidden />
-      <div className="container-x relative max-w-3xl">
-        <span className="eyebrow mb-5">Casos de éxito</span>
-        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient">
-          Transformaciones que mueven la aguja del negocio.
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground">
-          Cada proyecto se mide contra objetivos de negocio claros. Estos son algunos resultados
-          reales de los últimos 18 meses.
-        </p>
-      </div>
-    </section>
+    <PageHeader
+      eyebrow="Casos de éxito"
+      title={<>Transformaciones que mueven la aguja del negocio.</>}
+      description="Cada proyecto se mide contra objetivos de negocio claros. Estos son algunos resultados reales de los últimos 18 meses."
+      image={headerCases}
+      imageAlt="Profesionales analizando dashboards de crecimiento y KPIs"
+    />
 
     <section className="py-20 space-y-6">
       <div className="container-x grid gap-6">

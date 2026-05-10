@@ -9,8 +9,9 @@ export const Footer = () => (
       <div className="lg:col-span-2 space-y-5 max-w-md">
         <Logo />
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Xerebrum es un grupo de marketing y transformación digital. Diseñamos y operamos
-          soluciones que generan resultados medibles para empresas B2B en LATAM.
+          Estrategia, plataformas digitales y automatización con IA para resolver
+          problemas reales del negocio. Acompañamos a empresas B2B en LATAM con
+          soluciones que se traducen en resultados medibles.
         </p>
         <div className="space-y-2 text-sm text-muted-foreground">
           <a href="mailto:hola@xerebrum.com" className="flex items-center gap-2 hover:text-foreground transition-smooth">
@@ -49,8 +50,8 @@ export const Footer = () => (
     </div>
     <div className="border-t border-border">
       <div className="container-x py-6 flex flex-col md:flex-row gap-3 justify-between text-xs text-muted-foreground">
-        <p>© {new Date().getFullYear()} Xerebrum Group. Todos los derechos reservados.</p>
-        <p>Diseñado para construir lo que sigue.</p>
+        <p>© {new Date().getFullYear()} Xerebrum. Todos los derechos reservados.</p>
+        <p>Tecnología con criterio para resolver problemas reales.</p>
       </div>
     </div>
   </footer>
