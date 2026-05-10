@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { to: "/", label: "Inicio" },
+  { to: "/nosotros", label: "Nosotros" },
   { to: "/servicios", label: "Servicios" },
   { to: "/casos", label: "Casos de éxito" },
-  { to: "/nosotros", label: "Nosotros" },
 ];
 
 export const Header = () => {
