@@ -16,17 +16,26 @@ const points = [
 export const AiSpotlight = () => {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const yImg = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+  const yBg = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  const scaleBg = useTransform(scrollYProgress, [0, 1], [1.05, 1.15]);
 
   return (
-    <section ref={ref} className="relative py-24 lg:py-32 overflow-hidden">
-      {/* Seamless ambient glow */}
-      <div className="absolute top-1/2 -translate-y-1/2 -left-32 h-[600px] w-[600px] rounded-full bg-primary/15 blur-[140px]" aria-hidden />
-      <div className="absolute top-0 right-0 h-[400px] w-[400px] rounded-full bg-accent/10 blur-[120px]" aria-hidden />
+    <section ref={ref} className="relative py-28 lg:py-36 overflow-hidden">
+      {/* Background photo, fully blended into the page */}
+      <motion.div
+        style={{ y: yBg, scale: scaleBg, backgroundImage: `url(${aiOrb})` }}
+        className="absolute inset-0 -top-24 -bottom-24 bg-cover bg-center will-change-transform mask-fade-edges"
+        aria-hidden
+      />
+      {/* Readability layers — left side darker */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" aria-hidden />
+      <div className="absolute -top-32 -left-32 h-[600px] w-[600px] rounded-full bg-primary/15 blur-[140px]" aria-hidden />
+      <div className="absolute -bottom-32 right-0 h-[420px] w-[420px] rounded-full bg-accent/10 blur-[120px]" aria-hidden />
       <MotionLayer variant="dots" />
 
-      <div className="container-x relative grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <div>
+      <div className="container-x relative">
+        <div className="max-w-2xl">
           <div className="eyebrow mb-5">
             <Sparkles className="h-3.5 w-3.5 text-accent" />
             Automatización & IA aplicada
@@ -57,27 +66,10 @@ export const AiSpotlight = () => {
             </CtaButton>
           </div>
         </div>
-
-        {/* Real photo — human-AI collaboration, fully blended (no frame) */}
-        <motion.div
-          style={{ y: yImg }}
-          className="relative aspect-square max-w-xl mx-auto w-full will-change-transform"
-        >
-          <div className="absolute -inset-16 rounded-full bg-primary/25 blur-[140px] animate-pulse-glow" aria-hidden />
-          <div className="absolute -inset-8 rounded-full bg-accent/15 blur-[90px] animate-float-slow" aria-hidden />
-          <div className="relative w-full h-full animate-float">
-            <img
-              src={aiOrb}
-              alt="Colaboración humano–IA: estrategia humana potenciada por automatización inteligente — Xerebrum"
-              loading="lazy"
-              width={1280}
-              height={1280}
-              className="w-full h-full object-cover mask-fade-radial mix-blend-screen"
-            />
-            <div className="absolute inset-0 stream-dots-v opacity-25 mix-blend-screen mask-fade-radial" aria-hidden />
-          </div>
-        </motion.div>
       </div>
+
+      {/* Bottom seamless fade */}
+      <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-b from-transparent to-background pointer-events-none" aria-hidden />
     </section>
   );
 };
