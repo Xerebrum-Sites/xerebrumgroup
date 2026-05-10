@@ -3,10 +3,12 @@ import { useSearchParams } from "react-router-dom";
 import { z } from "zod";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Seo } from "@/components/Seo";
+import { PageHeader } from "@/components/PageHeader";
 import { CtaButton } from "@/components/CtaButton";
 import { useToast } from "@/hooks/use-toast";
 import { services } from "@/data/services";
 import { Mail, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import headerContact from "@/assets/header-contact.jpg";
 
 const schema = z.object({
   name: z.string().trim().min(2, "Ingresa tu nombre").max(80),
@@ -58,20 +60,14 @@ const Contact = () => {
 
   return (
     <SiteLayout>
-      <Seo title="Contacto · Xerebrum" description="Hablemos de tu proyecto. Marketing, desarrollo, consultoría 360 y automatización con IA." />
-      <section className="relative py-20 lg:py-28 bg-hero overflow-hidden">
-        <div className="absolute inset-0 bg-mesh opacity-70" aria-hidden />
-        <div className="container-x relative max-w-3xl">
-          <span className="eyebrow mb-5">Contacto</span>
-          <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient">
-            Conversemos sobre tu próximo movimiento.
-          </h1>
-          <p className="mt-6 text-lg text-muted-foreground">
-            Cuéntanos brevemente qué buscas resolver. Un especialista del área correspondiente te
-            responde en menos de 24 horas hábiles.
-          </p>
-        </div>
-      </section>
+      <Seo title="Contacto · Xerebrum" description="Hablemos de tu proyecto. Estrategia, desarrollo, plataformas y automatización con IA." />
+      <PageHeader
+        eyebrow="Contacto"
+        title={<>Conversemos sobre tu próximo movimiento.</>}
+        description="Cuéntanos brevemente qué buscas resolver. Un especialista del área correspondiente te responde en menos de 24 horas hábiles."
+        image={headerContact}
+        imageAlt="Profesional escribiendo en laptop, conversación en curso"
+      />
 
       <section className="py-20">
         <div className="container-x grid lg:grid-cols-[1fr_1.4fr] gap-12">

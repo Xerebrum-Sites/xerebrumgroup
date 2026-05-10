@@ -1,11 +1,13 @@
 import { SiteLayout } from "@/components/SiteLayout";
 import { Seo } from "@/components/Seo";
+import { PageHeader } from "@/components/PageHeader";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { ClientsMarquee } from "@/components/sections/ClientsMarquee";
+import headerAbout from "@/assets/header-about.jpg";
 
 const values = [
   { t: "Resultados sobre vanidad", d: "Métricas de negocio antes que likes." },
-  { t: "Una sola conversación", d: "Un solo equipo, un solo backlog, un solo responsable." },
+  { t: "Una sola conversación", d: "Un equipo, un backlog, un responsable." },
   { t: "Ingeniería del cambio", d: "Diseñamos personas, procesos y tecnología juntos." },
   { t: "IA con criterio", d: "Sin hype: aplicamos IA donde produce ROI real." },
 ];
@@ -14,22 +16,15 @@ const About = () => (
   <SiteLayout>
     <Seo
       title="Nosotros · Xerebrum"
-      description="Somos un grupo digital con equipos especializados en marketing, desarrollo, consultoría y automatización con IA."
+      description="Equipos especializados en estrategia, desarrollo, marketing y automatización con IA, trabajando como una sola conversación."
     />
-    <section className="relative py-20 lg:py-28 bg-hero overflow-hidden">
-      <div className="absolute inset-0 bg-mesh opacity-70" aria-hidden />
-      <div className="container-x relative max-w-3xl">
-        <span className="eyebrow mb-5">Nosotros</span>
-        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight text-gradient">
-          Un grupo construido para la era de la IA.
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-          Xerebrum nació para resolver un problema claro: la transformación digital se rompe cuando
-          marketing, tecnología y consultoría no hablan el mismo idioma. Operamos como un solo
-          grupo, con áreas especializadas que comparten método, datos y objetivos.
-        </p>
-      </div>
-    </section>
+    <PageHeader
+      eyebrow="Nosotros"
+      title={<>Construidos para la era de la IA.</>}
+      description="Nacimos para resolver un problema claro: la transformación digital se rompe cuando marketing, tecnología y consultoría no hablan el mismo idioma. Operamos como un equipo único, con áreas especializadas que comparten método, datos y objetivos."
+      image={headerAbout}
+      imageAlt="Equipo argentino conversando alrededor de una laptop"
+    />
 
     <section className="py-20">
       <div className="container-x grid lg:grid-cols-[1fr_1.4fr] gap-12">
